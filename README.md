@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+This Next.js application was built using NextJS 14, it fetches data from Arweave endpoint using GraphQL, displays it in a user-friendly format, and includes a dropdown filter to dynamically filter the displayed results. It also incorporates a loading state and error handling.
 
-First, run the development server:
+### PREREQUISITES
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Ensure you have the following software installed:
+1. Node.js (v14 or later)
+2. npm or yarn: Package managers that come with Node.js
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### INSTALLATION
+Clone the Repository using npm
+- `git clone https://github.com/Nukelimer/emet.git`
+then navigate to where the project was cloned into using:
+- `cd emet`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+### INSTALL DEPENDENCIES
+Use either npm or yarn to install the required dependencies.
 
-To learn more about Next.js, take a look at the following resources:
+- With npm:
+`npm i`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- With yarn:
+`yarn install`
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+### RUNNING THE APPLICATION
+-Start the Development Server
+ using npm:
+ 
+  `npm run dev`
+
+-Start the Development Server with yarn:
+ `yarn dev`
+
+
+Either of the command above starts the development server and opens your application in the browser at `http://localhost:3000`.
+
+
+
+### DEPENDENCIES
+This project uses the following key dependencies:
+
+Next.js: A React framework for server-rendered applications.
+React: A JavaScript library for building user interfaces.
+graphql: A library for querying and manipulating GraphQL data.
+@arweavekit/graphql: For querying transactions from the Arweave network.
+@components/ui: Shadcn UI components like Button, Skeleton, and DropdownMenu was used too.
+
+
+
